@@ -41,7 +41,7 @@ col1,col2=st.columns([5,5])
 with col1:
     no_words=st.text_input('No of Words')
 with col2:
-    blog_style=st.selectbox('Writing the blog for',
+    blog_style=st.selectbox('Select the blog style',
                             ('Fun and Saracastic','Depressing','Normal','Intelligent'),index=0)
     
 submit=st.button("Generate")
