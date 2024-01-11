@@ -19,7 +19,7 @@ def getGeminiresponse(input_text,no_words,blog_style):
         within {no_words} words.
             """
     
-    response = model.generate_content(template,temperature=0.3)
+    response = model.generate_content(template)
     
     return response.text
     
