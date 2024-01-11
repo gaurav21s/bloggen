@@ -15,7 +15,7 @@ def getGeminiresponse(input_text,no_words,blog_style):
     model = genai.GenerativeModel('gemini-pro')
 
     template=f"""
-        Write a informative blog for {blog_style} job profile for a topic {input_text}
+        Write a creative blog in {blog_style} style for a topic {input_text}
         within {no_words} words.
             """
     
