@@ -50,6 +50,13 @@ submit=st.button("Generate")
 if submit:
     st.write(getGeminiresponse(input_text,no_words,blog_style))
 
-st.markdown("""  
-    Made by Gaurav Shrivastav
-""")
+st.markdown("""
+    <style>
+        .faded-text {
+            opacity: 0.5;
+        }
+    </style>
+    <div class="faded-text">
+        Made by Gaurav Shrivastav
+    </div>
+""", unsafe_allow_html=True)
