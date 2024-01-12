@@ -49,3 +49,7 @@ submit=st.button("Generate")
 ## Final response
 if submit:
     st.write(getGeminiresponse(input_text,no_words,blog_style))
+
+st.markdown("""  
+    Made by Gaurav Shrivastav
+""")
