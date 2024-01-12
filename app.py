@@ -37,16 +37,10 @@ input_text=st.text_input("Enter the Blog Topic")
 
 col1,col2=st.columns([5,5])
 
-with col1:
-    no_words=st.text_input('No of Words')
-with col2:
-    blog_style=st.selectbox('Select the blog style',
-                            ('Normal','Fun and Saracasm','Depressing','Intelligent','Motivational'),index=0)
-
 professions = ['Engineer', 'Doctor', 'Teacher', 'Student','Other']
 
 with col1:
-    selected_profession = st.selectbox("What's your profession:", professions)
+    selected_profession = st.selectbox("What's your profession:", professions,index=0)
 
 # If 'Others' is selected, display a text input box
 if selected_profession == 'Other':
@@ -54,6 +48,12 @@ if selected_profession == 'Other':
         profession = st.text_input('Please type your profession:')
 else:
     profession = selected_profession
+
+with col1:
+    no_words=st.text_input('No of Words')
+with col2:
+    blog_style=st.selectbox('Select the blog style',
+                            ('Normal','Fun and Saracasm','Depressing','Intelligent','Motivational'),index=0)
 
 submit=st.button("Generate")
 
