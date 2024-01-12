@@ -39,12 +39,11 @@ col1,col2=st.columns([5,5])
 
 professions = ['Engineer', 'Doctor', 'Teacher', 'Student','Other']
 
-with col1:
-    selected_profession = st.selectbox("What's your profession:", professions,index=0)
+# User selection
+selected_profession = st.selectbox("What's your profession:", professions,index=0)
 
 # If 'Others' is selected, display a text input box
 if selected_profession == 'Other':
-    with col2:
         profession = st.text_input('Please type your profession:')
 else:
     profession = selected_profession
