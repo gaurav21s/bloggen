@@ -24,12 +24,12 @@ def getGeminiresponse(input_text,no_words,blog_style,profession):
     
     
 
-st.set_page_config(page_title="Your Blog Writing Friend",
+st.set_page_config(page_title="Generate Blogs",
                     page_icon='🤖',
                     layout='centered',
                     initial_sidebar_state='collapsed')
 
-st.header("Generate Blogs 🤖")
+st.header("Your Blog Writing Friend🤖")
 
 input_text=st.text_input("Enter the Blog Topic")
 
