@@ -15,7 +15,7 @@ def getGeminiresponse(input_text,no_words,blog_style,profession):
 
     template=f"""
         Write a creative blog in {blog_style} style for a topic {input_text}
-        within {no_words} words that can help this {profession}.
+        within {no_words} words that can help a {profession}.
             """
     
     response = model.generate_content(template,generation_config = genai.types.GenerationConfig(temperature = 0.3))
